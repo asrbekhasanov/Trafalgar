@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/mulish-v3-latin-regular.woff2') format('woff2'), 
+    url('../fonts/mulish-v3-latin-regular.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+    url('../fonts/mulish-v3-latin-300.woff2') format('woff2'),
+    url('../fonts/mulish-v3-latin-300.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/mulish-v3-latin-700.woff2') format('woff2'), 
+    url('../fonts/mulish-v3-latin-700.woff') format('woff'); 
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Mulish';
+}
+
+.container {   
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ========== header ==========  */
+
+.header {
+    margin: 135px 0 80px 0; 
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ========== navigation bar ==========  */
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    width: 450px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #1F1534;
+    font-family: 300;
+}
+
+.active {
+    color: #000000;
+    font-weight: 700;
+}
+
+/* ========== cta section ==========  */
+
+.cta {
+    background-image: url("../images/dotted_bg_image.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: top 5% left calc(50% - 630px);
+}
+
+.cta .container, .healthcare .container, .apps .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_content {
+    padding: 0 50px 0 0;
+}
+
+.section_heading {
+    margin: 106px 0 45px 140px;
+}
+
+.cta .section_heading {
+    margin: 106px 0 45px 0;
+    font-weight: 700;
+}
+
+.section_paragraph {
+    margin: 0 0 45px 140px;
+    font-weight: 300;
+}
+
+.cta .section_paragraph {
+    margin: 0 0 45px 0;
+}
+
+/* ========== bu hamma linklar uchun bir xil ==========  */
+
+.section_link, .sevices_link {
+    text-decoration: none;
+    color: #458ff6;
+    display: inline-block;
+    background-color: #ffffff;
+    width: 200px;
+    border: 1px solid #458FF6;
+    border-radius: 55px;
+    padding: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cta .section_link {
+    color: #ffffff;
+    background-color: #458FF6;
+    border: none;
+}
+
+/* ========== services section ==========  */
+
+.services {
+    margin-bottom: 163px;
+    background-image: url("../images/services_bg_image.svg"), url("../images/dotted_bg_image.svg");
+    background-repeat: no-repeat;
+    background-size: 850px, 100px;
+    background-position: top 55% left calc(50% - 490px), top 60% left calc(50% + 550px);
+}
+
+.services_heading {
+    text-align: center;
+    margin: 170px 0 60px 0;
+}
+
+.services_paragraph {
+    text-align: center;
+    width: 960px;
+    margin: 0 auto 80px auto;
+}
+
+.list {
+    margin: -11px -11px 69px -11px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.list_item {
+    margin: 11px;
+    width: 350px;
+    padding: 45px;
+    box-shadow: 10px 40px 50px rgba(229, 223, 246, 0.4);
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.sevices_link {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ========== healhcare section ==========  */
+
+.healthcare {
+    margin-bottom: 143px;
+    background-image: url("../images/dotted_bg_image.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: bottom 0 left calc(50% + 630px);
+}
+
+.healthcare .section_link {
+    margin-left: 140px;
+}
+
+/* ========== apps section ==========  */
+
+.apps .section_heading, .apps .section_paragraph {
+    margin-left: 0;
+}
+
+.apps .section_paragraph {
+    margin-right: 71px;
+}
+
+.apps {
+    margin-bottom: 143px;
+}
+
+/* ========== feedback section ==========  */
+
+.feedback {
+    margin-bottom: 143px;
+    background-image: url("../images/dotted_bg_image.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: top 70% left calc(50% - 570px);
+}
+
+.feedback .container{
+    background-color: #5A98F2;
+    border-radius: 24px;
+    padding: 61px;
+}
+
+.feedback_heading {
+    margin: 0 0 50px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.feedback_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedback_left_box, .feedback_blockquote {
+    width: 50%;
+}
+
+.feedback_left_box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedback_sub_box {
+    padding: 20px;
+    margin-right: 120px;
+    color: #ffffff;
+}
+
+.feedback_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+.feedback_blockquote {
+    margin: 0;
+    padding: 40px;
+    color: #ffffff;
+}
+
+.feedback_slider {
+    display: block;
+    margin: 39px auto 0 auto;
+}
+
+/* ========== news section ==========  */
+
+.news {
+    padding-bottom: 143px;
+    background-image: url("../images/dotted_bg_image.svg"), url("../images/news_bg_image.svg"), url("../images/dotted_bg_image.svg");
+    background-repeat: no-repeat;
+    background-size: 100px, 800px, 100px;
+    background-position: top 12% left calc(50% - 550px), top 20% left calc(50% + 650px), bottom -30px left calc(50% + 600px);
+}
+
+.news .section_heading {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 79px;
+}
+
+.news .list {
+    margin-bottom: 69px;
+}
+
+.news .list_item {
+    padding: 0;
+}
+
+.news_sub_heading, .news_paragraph, .news_link {
+    margin: 24px;
+}
+
+.news_paragraph {
+    color: #7D7987;
+}
+
+.news_link {
+    display: block;
+    text-decoration: none;
+    color: #458ff6;
+    margin-bottom: 35px;
+}
+
+.news .section_link {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ========== footer ==========  */
+
+.footer {
+    background-color: #458ff6;
+    background-image: url("../images/dotted_bg_image.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: bottom -10px left calc(50% - 620px);
+}
+
+.footer .container {
+    padding: 115px 0;
+    display: flex;
+    color: #ffffff;
+}
+
+.logo_link {
+    display: inline-block;
+    margin-bottom: 17px;
+}
+
+.footer_text {
+    margin: 0 145px 31px 0;
+}
+
+
+
+.footer_sub_heading {
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.footer_main_links_cover {
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_links {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 23px;
+}
